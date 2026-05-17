@@ -1,8 +1,10 @@
 # Music & Mental Well-being: An ML Classification & Genre Insights Project
-This project explores the intricate relationship between music listening habits, genre preferences, and their reported impact on various mental health conditions (Anxiety, Depression, Insomnia, and OCD) using a comprehensive survey dataset. It employs machine learning classification models to predict how music affects an individual's mental well-being and derives data-driven genre insights for specific conditions.
+This project explores the relationship between music listening habits, genre preferences, and their reported impact on mental health conditions such as Anxiety, Depression, Insomnia, and OCD using real-world survey data.
+
+The project applies Machine Learning classification models to predict how music affects an individual's mental well-being and derives data-driven genre insights associated with positive mental health effects.
 
 # Project Goal
-To analyze survey data, build classification models to predict whether music has a positive or non-positive effect on mental well-being, and identify music genres that correlate with reported improvements in specific mental health conditions.
+To analyze survey-based behavioral data, build classification models to predict whether music has a positive or non-positive impact on mental well-being, and identify music genres that correlate with reported improvements in specific mental health conditions.
 
 # Key Features
 Data Loading & Preprocessing: Robust handling of survey data, including cleaning and mapping of categorical responses in the 'Music effects' column to numerical values.
@@ -11,28 +13,43 @@ Exploratory Data Analysis (EDA): Comprehensive visualizations (histograms, pie c
 
 Machine Learning Classification:
 
-Implementation and evaluation of multiple supervised learning models including Logistic Regression, Decision Tree, Random Forest.
+Implemented and evaluated multiple supervised learning models including:
 
-Models are trained to classify the impact of music on mental well-being (Improve vs. Worsen/No Effect).
+Logistic Regression
+Decision Tree Classifier
+Random Forest Classifier
 
-Model Optimization: Hyperparameter tuning (e.g., GridSearchCV for Decision Tree) to enhance model performance.
+Models were trained to classify the reported impact of music on mental well-being:
 
-Genre Insights for Mental Well-being: A custom function to identify and suggest top music genres associated with reported positive mental health effects, particularly for users experiencing specific conditions (e.g., anxiety). This is based on correlations observed in the dataset, providing general trends rather than personalized recommendations.
+Improve
+No Effect
+Worsen
 
 # Performance & Insights
-Classification Accuracy: Achieved competitive accuracy scores across various models, with the Optimized Decision Tree model reaching approximately 76.03% accuracy in predicting music's effect on mental well-being.
+Achieved competitive classification performance across multiple ML models
+Optimized Decision Tree model achieved approximately 76% accuracy
+Identified performance limitations caused by:
+Class imbalance
+Survey noise
+Dataset bias
+Uneven label distribution
 
-Detailed Metrics: Provides Confusion Matrices, Precision, Recall, and F1-Scores for all evaluated classifiers, offering a granular view of model performance.
-
-Genre Correlation: Identifies which genres are most frequently favored by individuals reporting a positive music effect, especially under certain mental health conditions (e.g., "Rock" or "Pop" might show high correlation with improvement for individuals with high anxiety scores).
+The project emphasizes practical understanding of real-world ML limitations and behavioral data analysis.
 
 # Technologies Used
-Python: Programming Language
 
-Pandas: Data manipulation and analysis
+Programming & Libraries
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+Jupyter Notebook
 
-NumPy: Numerical operations
-
-Matplotlib & Seaborn: Data visualization
-
-Scikit-learn: Machine learning algorithms, model selection, and evaluation
+Machine Learning Concepts
+Classification
+Feature Engineering
+Hyperparameter Tuning
+Model Evaluation
+Data Preprocessing
